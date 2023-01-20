@@ -6,5 +6,12 @@ Scrape time varying environmental data from a web site to generate time series o
 
 Example: Water Boards Emschergenossenschaft und Lippeverband 
 
+
+
+## Periodic Web Scraping of Time Series 
+* Discharge Q(t)
+* Water Level W(t) 
+
 https://howis.eglv.de/pegel/html/uebersicht_internet.php
 
+## 
