@@ -14,4 +14,15 @@ Example: Water Boards Emschergenossenschaft und Lippeverband
 
 https://howis.eglv.de/pegel/html/uebersicht_internet.php
 
-## 
+## One Time Scraping of Master Data of Gauges ("Pegelstammdaten")
+
+* As much as you can get! Loop over possible PIDVals and create URL for the web request dynamically.
+
+https://howis.eglv.de/pegel/html/stammdaten_html/MO_StammdatenPegel.php?PIDVal=32
+
+https://howis.eglv.de/pegel/html/stammdaten_html/MO_StammdatenPegel.php?PIDVal=28
+
+
+## Georeference five gauge location maps 
+
+  
