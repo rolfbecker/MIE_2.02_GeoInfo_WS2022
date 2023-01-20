@@ -36,7 +36,11 @@ Add all time series of all parameters into one "long" measurement table. The pri
 
 Create different views to extract one parameter, e.g. 
 ```
-select s.sid, s.geom, s.name, m.param, m.val, m.units from meas m, stations s where m.sid = s.sid and PARAM = 'W'
+create view v_stations_w as
+select s.sid, s.geom, s.name, m.param, m.val, m.units 
+from meas m, stations s 
+where m.sid = s.sid 
+and PARAM = 'W';
 ```
 
 ## QGIS
