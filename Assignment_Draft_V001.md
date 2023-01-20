@@ -6,8 +6,6 @@ Scrape time varying environmental data from a web site to generate time series o
 
 Example: Water Boards Emschergenossenschaft und Lippeverband 
 
-
-
 ## Periodic Web Scraping of Time Series 
 * Discharge Q(t)
 * Water Level W(t) 
@@ -24,7 +22,29 @@ https://howis.eglv.de/pegel/html/stammdaten_html/MO_StammdatenPegel.php?PIDVal=2
 
 Scrape master data completely and insert it into a PG table. Also download the "maps".
 
+Discuss: Can we store the image data as a BLOB in the PG database? Does it make sense? What is the API?
+
 ## Georeference five gauge location maps 
 
 E.g. georeference this picture of a map: https://howis.eglv.de/pegel/images/stationpics/maps/20012_stadtplan.gif
+
+## PostgreSQL / PostGIS
+
+Create a schema eglv. Create all tables and views in this schema. 
+
+Add all time series of all parameters into one "long" measurement table. The primary key would be similar to (SID, TS, PARAM).
+
+Create different views to extract one parameter, e.g. 
+```
+select s.sid, s.geom, s.name, m.param, m.val, m.units from meas m, stations s where m.sid = s.sid and PARAM = 'W'
+```
+
+## QGIS
+
+Link to the database and create a dynamic map by means of the temporal controller.
+
+Cerate 
+
+
+
 
