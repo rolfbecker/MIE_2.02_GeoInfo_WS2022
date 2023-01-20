@@ -45,13 +45,19 @@ and PARAM = 'W';
 
 ## QGIS
 
-Link to the database and create a dynamic map by means of the temporal controller.
+Link to the database and create a dynamic map by means of the **temporal controller**.
 
 For each time stamp create an image (temporal controller) (.png) and mpeg-ify it.  
 
-## Nerds (extra, not graded)
+## Nerd Exercise 1 (extra, not graded)
 
 Write a Python extension for QGIS such that, when you click on a gauge point, the time (Q? W?) series is plotted in a popup window.
 
 Write a Python extension for QGIS which shows the official location map (img on website).
+
+## Nerd Exercise 2: Get it into the web (web mapping).
+
+QGIS -> Server. Dynamically possible????
+
+Folium / Panel 
 
