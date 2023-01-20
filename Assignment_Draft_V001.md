@@ -22,7 +22,9 @@ https://howis.eglv.de/pegel/html/stammdaten_html/MO_StammdatenPegel.php?PIDVal=3
 
 https://howis.eglv.de/pegel/html/stammdaten_html/MO_StammdatenPegel.php?PIDVal=28
 
+Scrape master data completely and insert it into a PG table. Also download the "maps".
 
 ## Georeference five gauge location maps 
 
-  
+E.g. georeference this picture of a map: https://howis.eglv.de/pegel/images/stationpics/maps/20012_stadtplan.gif
+
