@@ -1,6 +1,10 @@
 # Assignment Geoinfo WS2022/23
 
-General Idea:
+## Note
+
+These tasks were created with the students who have attended the class in person. Should these short notes be **unclear** then watch the **most recent lecture videos** and **consult your fellow students through the course specific Discord channels**.
+
+## General Idea
 
 Scrape time varying environmental data from a web site to generate time series of env. variables.
 
